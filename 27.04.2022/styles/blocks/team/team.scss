@@ -1,0 +1,64 @@
+@import "../../components/mixins/mixins.scss";
+
+.team__container {
+	text-align: center;
+	margin-bottom: 115px;
+}
+
+.team__text-orange {
+	@include text-orange;
+	text-transform: uppercase;
+	margin-bottom: 25px;
+	line-height: 15.4px;
+}
+
+.team__title {
+	font-size: 32px;
+	line-height: 41.6px;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+}
+
+.team__images {
+	display: grid;
+	justify-content: center;
+	grid-template: repeat(2, minmax(auto, 350px))/ repeat(3, minmax(auto, 350px));
+	gap: 30px;
+	margin-bottom: 80px;
+}
+.team__image {
+	padding: 160px 85px;
+	text-align: center;
+}
+.team__member {
+	font-size: calc(7px + 17 * (100vw / 1920));
+	line-height: 30px;
+	color: white;
+}
+.team__position {
+	font-size: calc(3px + 12 * (100vw / 1920));
+	line-height: 23.8px;
+	color: white;
+}
+.team__member {}
+.team__position {}
+.team__creative-director {
+	background: url('../img/team/anna.jpg') center/ cover no-repeat;
+}
+.team__seo {
+	background: url('../img/team/andy.jpg') center/ cover no-repeat;
+}
+.team__designer {
+	background: url('../img/team/katy.jpg') center/ cover no-repeat;
+}
+.team__devolper {
+	background: url('../img/team/margo.jpg') center/ cover no-repeat;
+}
+.team__art-director {
+	background: url('../img/team/kanye.jpg') center/ cover no-repeat;
+}
+.team__tester {
+	background: url('../img/team/marta.jpg') center/ cover no-repeat;
+}
+.team__button {
+}

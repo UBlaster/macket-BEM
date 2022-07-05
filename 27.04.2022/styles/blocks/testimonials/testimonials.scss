@@ -1,0 +1,49 @@
+@import "../../components/mixins/mixins.scss";
+
+.testimonials {
+	background-color: #3A0F73;
+}
+.testimonials__container {
+	text-align: center;
+	padding-bottom: 215px;
+	margin: 0 100px !important	;
+}
+.testimonials__header-title {
+	line-height: 220px;
+	font-size: 200px;
+	color: #AAAAAA;
+	padding: 75px 0;
+	opacity: 0.1;
+}
+.testimonias__text {
+	margin: 0 310px 65px;
+	line-height: 28.8px;
+	font-size: 1.125rem;
+	color: #FFFFFF;
+}
+
+.testimonials__autor {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.testimonials__photo {
+	max-width: 60px;
+}
+
+.testimonials__autor-box {
+	text-align: left;
+}
+.testimonials__autor-name {
+	line-height: 22.4px;
+	font-size: 1rem;
+	color: #FFFFFF;
+}
+
+.testimonials__autor-position {
+	line-height: 22.4px;
+	font-size: 13px;
+	color: #FFFFFF;
+} 

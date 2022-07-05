@@ -1,0 +1,62 @@
+@import "../../components/mixins/mixins.scss";
+
+.contacts {}
+.container {}
+.contacts__container {
+	display: flex;
+	margin-bottom: 120px !important;
+}
+.contacts__company {
+	margin:  0 180px 50px 0;
+}
+.contacts__address {
+	margin-bottom: 50px;
+}
+.contacts__name {
+	color: #22222240;
+	font-size: 14px;
+	line-height: 20px;
+}
+.contacts__text {
+	font-size: 24px;
+	line-height:33px;
+}
+.contacts__information {}
+.contacts__yours { 
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.contacts__your-info {
+	width: 335px;
+	padding: 15px 30px;
+	font-size: 14px;
+	line-height: 20px;
+	border: 2px solid #eeeeee;
+	margin-bottom: 30px;
+	&::placeholder {
+		color: #999999;
+	}
+	&:first-child {
+		margin-right: 30px;
+	}
+	&:focus {
+		border: 2px solid #000;
+		box-shadow: 0 0 5px #000;
+		outline: 0;
+	}
+}
+
+.contacts__your-info_message {
+	width: 100%;
+	padding-bottom: 50px;
+	resize: none;
+	margin-bottom: 65px;
+}
+
+.contacts__button {
+	font-size: 14px;
+	line-height: 21px;
+	width: 192px;
+}
+

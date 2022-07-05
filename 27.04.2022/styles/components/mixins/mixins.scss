@@ -1,0 +1,28 @@
+$orange: #FD8558;
+
+
+@mixin text-orange {
+	color: $orange;
+	letter-spacing: 2px;
+}
+
+@mixin title {
+	font-size: 70px;
+	font-weight: lighter;
+	color: #fff;
+}
+
+@mixin button-black {
+	outline: 2px solid #FD8558;
+	outline-offset: -2px;
+	background: #00000000; //для прозрачности бекграунда
+	// лучше использовать ключевое слово transparent 
+}
+
+@mixin block-name {
+	color: #F7F7F7;
+}
+
+@mixin portfolio-size {
+	max-width: 360px;
+}

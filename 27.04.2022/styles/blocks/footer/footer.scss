@@ -1,0 +1,61 @@
+@import "../../components/mixins/mixins.scss";
+
+.footer {
+	background:#111111;
+}
+.container {
+
+}
+.footer__container {
+	color: #fff;
+	padding: 90px 0 80px 0;
+}
+.footer__header {
+	display: flex;
+	justify-content: space-between;
+}
+.footer__logo-box {
+	margin: 0 165px 0 0;
+}
+.footer__logo {
+	max-width: 113px;
+	margin-bottom: 40px;
+}
+.footer__contacts {
+	display: flex;
+	opacity: 0.6;
+}
+.footer__number {
+	font-size: 15px;
+	line-height: 22.5px;
+}
+.footer__e-mail {
+	font-size: 15px;
+	line-height: 22.5px;
+}
+.footer__columns {
+	margin: 0 0 85px 0;
+}
+.footer__column-title {
+	font-size: 24px;
+	line-height: 31.2px;
+	margin-bottom: 20px;
+}
+.footer__column-item {
+	color: #BABABA;
+	font-size: 14px;
+	line-height: 31.6px;
+}
+.footer__license {
+	text-align: center;
+	color: #BABABA;
+	font-size: 15px;
+	line-height: 30px;
+}
+
+.footer__license a {
+	color: #fff;
+	&:visited {
+	color: #fff;
+	}
+}

@@ -1,0 +1,68 @@
+//fonts Poppins
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&family=Poppins:wght@400;700&display=swap');
+
+//components
+@import "components/mixins/button/button.scss";
+
+//blocks
+@import "blocks/header/header.scss";
+@import "blocks/hero/hero.scss";
+@import "blocks/about/about.scss";
+@import "blocks/works/works.scss";
+@import "blocks/skills/skills.scss";
+@import "blocks/team/team.scss";
+@import "blocks/testimonials/testimonials.scss";
+@import "blocks/news/news.scss";
+@import "blocks/contacts/contacts.scss";
+@import "blocks/footer/footer.scss";
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	min-width: 1440px;
+}
+
+ul {
+	list-style-type:none;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:visited {
+	color: inherit;
+}
+
+.works__checkbox {
+	box-shadow: none;
+	appearance: none;
+	-webkit-appearance: none;
+	outline: none;
+	cursor: pointer;
+	border-radius: 0;
+}
+
+.page {
+	margin: 0 auto;
+	max-width: 1440px;
+	min-width: 1200px;
+}
+
+.container {
+	margin: 0 135px;
+}
+
+.body {
+	background-color: #00000025;
+}
+
+.page {
+	background-color: #fff;
+}

@@ -1,0 +1,94 @@
+@import "../../components/mixins/mixins.scss";
+
+
+
+.works__container {
+}
+
+.works__header {}
+
+.works__text-orange {
+	@include text-orange;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+.works__header-items {
+	display: flex;
+	justify-content: space-between;
+	align-items: end;
+}
+
+.works__subtitle {
+	font-size: 32px;
+	width: 300px;
+}
+
+.works__button {
+	z-index: 1;
+}
+
+.works__header-title {
+	font-size: 200px;
+	color: #F7F7F7;
+	text-align: right;
+	line-height: 1;
+	margin: 0 -135px;
+}
+
+.works__portfolio-images {
+	margin: 0 -135px 115px;
+	display: grid;
+	grid-template: repeat(2, minmax(auto, 360px))/ repeat(4, minmax(auto, 360px));
+	grid-auto-flow: column;
+}
+
+.works__portfolio-block {
+	padding: 200px 20px 40px;
+}
+
+.works__portfolio-block_oblique-house {
+	grid-column: span 2;
+	grid-row: span 2;
+	padding-top: 555px; // не знаю как сделать, чтобы паддинг нормально менялся в зависимости от размера страницы
+	background: url('https://avatars.mds.yandex.net/get-zen_doc/1671806/pub_5e022aab3639e600ae36acfa_5e02a50d98930900b256a346/scale_1200')center/ cover no-repeat;
+}
+
+.works__portfolio-textbox {
+	background-color: #ffffff85;
+	padding: 40px 40px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.works__portfolio-text {
+	line-height: 33px;
+	font-size: 24px;
+}
+
+.works__portfolio-block_crazy-max {
+	background: url('../img/works/crazymax.jpg') center/ cover no-repeat;
+}
+ 
+.works__portfolio-block_stylish-house {
+	background: url('../img/works/stylish-house.jpg') center/ cover no-repeat;
+}
+
+.works__portfolio-block_differents {
+	background: url('../img/works/differents.jpg') center/ cover no-repeat;
+}
+.works__portfolio-block_bag {
+	background: url('../img/works/crazymax.jpg') center/ cover no-repeat;
+}
+
+.works__checkbox {
+	border: 2px inset #222222;
+	width: 46px;
+	height:46px;
+	background-color: white;
+	&:checked {
+		background: #222222 url('../img/works/checked.png') center/ contain no-repeat;
+	}
+}
+

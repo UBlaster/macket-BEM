@@ -1,0 +1,29 @@
+@import "../../components/mixins/mixins.scss";
+
+.hero {
+	background: url('../img/hero/bg.png') center no-repeat;
+	text-align: center;
+	padding: 240px 0;
+}
+
+.hero__container {
+	display: inline-block;
+ //Неплохое решение для ограничения текста по ширине, но лучше это ограничие давать элементу с текстом, т.е. .hero__title
+}
+
+.hero__title {
+	@include title; //Выглядит отлично
+	margin-bottom: 20px;
+	width: 632px;
+}
+
+.hero__button {
+	display: inline-block;
+	margin: 0 10px;
+	//Неуниверсальное решение, можно если я добавлю 3 кнопку то отступа между второй и третьей кнопки уже не будет
+	//Можно использовать сложный селектор & + & { display:inline-block; margin: 10px; } (& = .hero__button)
+}
+
+.hero__button_black {
+	@include button-black; //Выглядит отлично
+}

@@ -1,0 +1,19 @@
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  color: red;
+}
+
+.header__list:-webkit-any-link {
+  color: green;
+}
+
+.header__list:-moz-any-link {
+  color: green;
+}
+
+.header__list:any-link {
+  color: green;
+}

@@ -1,0 +1,36 @@
+@import "../../components/mixins/mixins.scss";
+
+.header {
+	padding-bottom: 21px;
+	display: flex;
+	align-items: center;
+}
+
+.header__logo {
+	margin-right: 299px; //Делаем позиционирование логотипа отступом
+}
+
+.header__logo-img {
+	padding-left: 45px;
+}
+
+.header__list{
+	display: flex;
+	padding: 15px;
+}
+
+.header__list-item {
+	list-style-type: none;
+	margin: 0 10px;
+	font-size: 15px;
+}
+
+.header__link{
+	color: black;
+}
+
+.header__link_active{
+	@include text-orange;
+	letter-spacing: 0;
+	//Миксин? Круто!
+}
